@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>【完成例】 zipcloud API</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="title">【完成例】住所検索(zipcloud) APIを使ってみよう</h1>
+      </div>
+    </header>
+    <main class="wrapper">
+      <div class="search">
+        <input type="text" id="js-zipcode" class="input-text" value="1410031" />
+        <button id="js-submit">検索</button>
+      </div>
+      <p id="js-error-text" class="error-text">その郵便番号は存在しないようです！</p>
+      <table class="result">
+        <tr class="result__row">
+          <th class="result__head">住所1</th>
+          <td id="js-address1" class="result__data"></td>
+        </tr>
+        <tr class="result__row">
+          <th class="result__head">住所2</th>
+          <td id="js-address2" class="result__data"></td>
+        </tr>
+        <tr class="result__row">
+          <th class="result__head">住所3</th>
+          <td id="js-address3" class="result__data"></td>
+        </tr>
+        <tr class="result__row">
+          <th class="result__head">カナ1</th>
+          <td id="js-kana1" class="result__data"></td>
+        </tr>
+        <tr class="result__row">
+          <th class="result__head">カナ2</th>
+          <td id="js-kana2" class="result__data"></td>
+        </tr>
+        <tr class="result__row">
+          <th class="result__head">カナ3</th>
+          <td id="js-kana3" class="result__data"></td>
+        </tr>
+      </table>
+    </main>
+    <footer class="footer"><a href="https://zipcloud.ibsnet.co.jp/doc/api" target="_blank">zipcloud</a></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
